@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King of Queens Ultimate Fan Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="header">
+                <h1>King of Queens</h1>
+                <h2>Ultimate Fan Trivia</h2>
+                <p class="subtitle">Test your knowledge of Doug, Carrie, Arthur and the gang!</p>
+            </div>
+            <div class="welcome-content">
+                <div class="quiz-info">
+                    <p><strong>📝 30 Questions</strong> across 4 categories</p>
+                    <p><strong>⏰ 10 Minutes</strong> to complete</p>
+                    <p><strong>🏆 Scoring Levels:</strong></p>
+                    <ul>
+                        <li>25-30: King/Queen of Queens Superfan</li>
+                        <li>20-24: IPS Supervisor Level</li>
+                        <li>15-19: Regular Customer</li>
+                        <li>10-14: Occasional Viewer</li>
+                        <li>0-9: Time to binge-watch the series!</li>
+                    </ul>
+                </div>
+                <button id="start-quiz" class="btn-primary">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Section Intro Screen -->
+        <div id="section-intro-screen" class="screen">
+            <div class="section-intro">
+                <h2>Get Ready!</h2>
+                <p id="section-title">Now you will be quizzed on</p>
+                <h3 id="section-name"></h3>
+                <p id="section-count"></p>
+                <button id="start-section" class="btn-primary">Continue</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="current-section">Section 1 of 4</span>
+                    <span id="question-counter">Question 1 of 8</span>
+                </div>
+                <div id="timer" class="timer">
+                    <span id="time-left">10:00</span>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+
+            <div class="question-container">
+                <h3 id="question-text"></h3>
+                <div id="answer-options" class="answer-options">
+                    <!-- Answer options will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="quiz-navigation">
+                <button id="next-question" class="btn-primary" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-header">
+                <h2>Quiz Complete!</h2>
+                <div class="final-score">
+                    <div class="score-number" id="final-score">0/30</div>
+                    <div class="score-level" id="score-level"></div>
+                </div>
+            </div>
+
+            <div class="section-scores">
+                <h3>Section Breakdown:</h3>
+                <div id="section-breakdown">
+                    <!-- Section scores will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="detailed-results">
+                <h3>Detailed Results:</h3>
+                <div id="detailed-answers">
+                    <!-- Detailed answers will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="results-actions">
+                <button id="restart-quiz" class="btn-primary">Take Quiz Again</button>
+                <button id="share-results" class="btn-secondary">Share Results</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
