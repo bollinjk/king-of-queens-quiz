@@ -50,6 +50,19 @@ body {
 }
 
 /* Welcome Screen */
+.hero-image {
+    margin-bottom: 20px;
+}
+
+.homepage-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
 .header h1 {
     font-size: 3.2rem;
     color: #1e3c72;
