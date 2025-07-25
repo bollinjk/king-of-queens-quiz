@@ -56,7 +56,6 @@ const elements = {
 
 // Initialize the quiz
 function initializeQuiz() {
-    // Initialize user answers array
     userAnswers = [];
     for (let i = 0; i < quizData.sections.length; i++) {
         userAnswers[i] = [];
@@ -65,7 +64,6 @@ function initializeQuiz() {
         }
     }
     
-    // Add event listeners
     elements.startQuiz.addEventListener('click', startQuiz);
     elements.startSection.addEventListener('click', startCurrentSection);
     elements.nextQuestion.addEventListener('click', nextQuestion);
@@ -108,7 +106,6 @@ function updateQuizHeader() {
     elements.currentSection.textContent = `Section ${currentSection + 1} of ${totalSections}`;
     elements.questionCounter.textContent = `Question ${currentQuestion + 1} of ${currentSectionQuestions}`;
     
-    // Update progress bar
     const totalQuestions = quizData.sections.reduce((total, section) => total + section.questions.length, 0);
     const completedQuestions = calculateCompletedQuestions();
     const progress = (completedQuestions / totalQuestions) * 100;
@@ -118,15 +115,10 @@ function updateQuizHeader() {
 // Calculate total completed questions
 function calculateCompletedQuestions() {
     let completed = 0;
-    
-    // Add all questions from completed sections
     for (let i = 0; i < currentSection; i++) {
         completed += quizData.sections[i].questions.length;
     }
-    
-    // Add current question number from current section
     completed += currentQuestion;
-    
     return completed;
 }
 
@@ -138,14 +130,12 @@ function displayQuestion() {
     elements.questionText.textContent = question.question;
     elements.answerOptions.innerHTML = '';
     
-    // Create answer options
     question.options.forEach((option, index) => {
         const optionElement = document.createElement('div');
         optionElement.className = 'answer-option';
-        optionElement.setAttribute('data-letter', String.fromCharCode(65 + index)); // A, B, C, D
+        optionElement.setAttribute('data-letter', String.fromCharCode(65 + index));
         optionElement.textContent = option;
         
-        // Check if this option was previously selected
         if (userAnswers[currentSection][currentQuestion] === index) {
             optionElement.classList.add('selected');
             elements.nextQuestion.disabled = false;
@@ -158,18 +148,12 @@ function displayQuestion() {
 
 // Select an answer
 function selectAnswer(answerIndex, optionElement) {
-    // Remove selection from all options
     document.querySelectorAll('.answer-option').forEach(option => {
         option.classList.remove('selected');
     });
     
-    // Add selection to clicked option
     optionElement.classList.add('selected');
-    
-    // Store the answer
     userAnswers[currentSection][currentQuestion] = answerIndex;
-    
-    // Enable next button
     elements.nextQuestion.disabled = false;
 }
 
@@ -178,19 +162,16 @@ function nextQuestion() {
     const section = quizData.sections[currentSection];
     
     if (currentQuestion < section.questions.length - 1) {
-        // Move to next question in current section
         currentQuestion++;
         updateQuizHeader();
         displayQuestion();
         elements.nextQuestion.disabled = true;
     } else {
-        // Move to next section or finish quiz
         if (currentSection < quizData.sections.length - 1) {
             currentSection++;
             currentQuestion = 0;
             showSectionIntro();
         } else {
-            // Quiz completed
             finishQuiz();
         }
     }
@@ -205,7 +186,6 @@ function startTimer() {
         if (timeLeft <= 0) {
             finishQuiz();
         } else if (timeLeft <= 60) {
-            // Warning when 1 minute left
             elements.timeLeft.parentElement.classList.add('warning');
         }
     }, 1000);
@@ -262,11 +242,9 @@ function showResults() {
     
     const results = calculateResults();
     
-    // Display final score
     elements.finalScore.textContent = `${results.totalCorrect}/${results.totalQuestions}`;
     elements.scoreLevel.textContent = getScoreLevel(results.totalCorrect);
     
-    // Display section breakdown
     elements.sectionBreakdown.innerHTML = '';
     results.sectionResults.forEach(section => {
         const sectionDiv = document.createElement('div');
@@ -278,7 +256,6 @@ function showResults() {
         elements.sectionBreakdown.appendChild(sectionDiv);
     });
     
-    // Display detailed answers
     elements.detailedAnswers.innerHTML = '';
     let questionNumber = 1;
     
@@ -322,26 +299,20 @@ function getScoreLevel(score) {
 
 // Restart the quiz
 function restartQuiz() {
-    // Reset all variables
     currentSection = 0;
     currentQuestion = 0;
     timeLeft = 1800;
     quizStarted = false;
     
-    // Clear timer
     clearInterval(timerInterval);
     
-    // Reset timer display
     elements.timeLeft.textContent = '30:00';
     elements.timeLeft.parentElement.classList.remove('warning');
     
-    // Reset progress bar
     elements.progressFill.style.width = '0%';
     
-    // Reset user answers
     initializeQuiz();
     
-    // Show welcome screen
     hideAllScreens();
     screens.welcome.classList.add('active');
 }
@@ -360,7 +331,6 @@ function shareResults() {
             url: window.location.href
         });
     } else {
-        // Fallback: copy to clipboard
         navigator.clipboard.writeText(shareText).then(() => {
             alert('Results copied to clipboard!');
         }).catch(() => {
