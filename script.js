@@ -4,171 +4,271 @@
 const quizData = {
     sections: [
         {
-            name: "DOUG'S WORK LIFE",
-            questions: [
-                {
-                    question: "What was the name of Doug's supervisor at IPS who frequently gave him grief?",
-                    options: ["Patrick O'Boyle", "Jack O'Boyle", "Steve O'Boyle", "Mike O'Boyle"],
-                    correct: 0
-                },
-                {
-                    question: "What was Doug's employee ID number at IPS?",
-                    options: ["D1457", "D1547", "D1574", "D1745"],
-                    correct: 2
-                },
-                {
-                    question: "Which of Doug's co-workers lived in his basement briefly?",
-                    options: ["Deacon", "Spence", "Danny", "Richie"],
-                    correct: 2
-                },
-                {
-                    question: "What was the name of the strip club where Doug accidentally delivered a package meant for IPS headquarters?",
-                    options: ["The Jungle", "The Wild Side", "Platinum Peaks", "The Fox Den"],
-                    correct: 0
-                },
-                {
-                    question: "What gift did Doug receive for his 10-year anniversary at IPS?",
-                    options: ["A watch", "A jacket", "A plaque", "A pen set"],
-                    correct: 2
-                },
-                {
-                    question: "What was the name of Doug's delivery route before he got \"Highland Park\"?",
-                    options: ["Pine Hills", "Maple Grove", "Oakland Gardens", "Forest Hills"],
-                    correct: 3
-                },
-                {
-                    question: "What food item did Doug hide in his truck's sun visor?",
-                    options: ["Twinkies", "Ring Dings", "Ho Hos", "Swiss Rolls"],
-                    correct: 1
-                },
-                {
-                    question: "What was the name of the driver Doug had to train who ended up being better liked than him?",
-                    options: ["Eddie", "Tommy", "Jimmy", "Bobby"],
-                    correct: 2
-                }
-            ]
-        },
-        {
-            name: "DOUG'S MARRIED LIFE",
+            name: "DOUG & CARRIE'S RELATIONSHIP",
             questions: [
                 {
                     question: "Where did Doug and Carrie first meet?",
-                    options: ["At a bar", "At IPS", "At a football game", "At Coopers"],
-                    correct: 3
-                },
-                {
-                    question: "What was Doug and Carrie's wedding song?",
-                    options: ["\"You Are So Beautiful\"", "\"We've Only Just Begun\"", "\"Cherish\"", "\"Time After Time\""],
-                    correct: 1
-                },
-                {
-                    question: "What anniversary gift did Doug accidentally destroy that Carrie was saving?",
-                    options: ["Their wedding cake top", "Their wedding video", "Their first photo together", "Their wedding invitation"],
+                    options: ["At Cooper's Bar", "At IPS", "At the DMV", "At a bowling alley"],
                     correct: 0
                 },
                 {
-                    question: "What was the name of Doug and Carrie's dog that passed away?",
-                    options: ["Stanley", "Cooper", "Parker", "Bailey"],
+                    question: "What did Doug famously give up for Lent?",
+                    options: ["Pizza", "TV", "Beer", "Meat"],
                     correct: 0
                 },
                 {
-                    question: "What is the address of the Heffernan house?",
-                    options: ["3121 Aberdeen Street", "2343 Aberdeen Street", "3121 Anderson Street", "2343 Anderson Street"],
+                    question: "What hobby did Carrie try to get Doug to take up?",
+                    options: ["Reading", "Walking", "Photography", "Painting"],
                     correct: 0
                 },
                 {
-                    question: "What was the occupation of the couple Doug and Carrie befriended at their cooking class?",
-                    options: ["Doctors", "Lawyers", "Teachers", "Accountants"],
-                    correct: 1
-                },
-                {
-                    question: "What color did Carrie paint the kitchen without consulting Doug?",
-                    options: ["Yellow", "Blue", "Green", "Orange"],
+                    question: "What was Doug and Carrie's typical Chinese food order?",
+                    options: ["General Tso's chicken", "Moo shu pork", "Beef and broccoli", "Sweet and sour chicken"],
                     correct: 2
                 },
                 {
-                    question: "What item did Doug buy instead of the washing machine they needed?",
-                    options: ["A big screen TV", "A pool table", "A motorcycle", "A pinball machine"],
+                    question: "Where did Doug hide his emergency food stash?",
+                    options: ["In the garage", "In his truck", "Behind the water heater", "In his toolbox"],
+                    correct: 2
+                },
+                {
+                    question: "What was the name of Doug and Carrie's favorite pizza place?",
+                    options: ["Gino's", "Tony's", "Mario's", "Luigi's"],
+                    correct: 0
+                },
+                {
+                    question: "What gift did Doug buy instead of an anniversary present for Carrie?",
+                    options: ["A big screen TV", "A pool table", "A gaming system", "A massage chair"],
+                    correct: 1
+                },
+                {
+                    question: "What did Doug name his sandwich at Cooper's?",
+                    options: ["The King", "The Douglas", "The Heffernan Special", "The Queens Delight"],
+                    correct: 0
+                },
+                {
+                    question: "What kind of car did Doug and Carrie typically drive?",
+                    options: ["Jeep Cherokee", "Ford Explorer", "Honda Civic", "Toyota Camry"],
+                    correct: 0
+                },
+                {
+                    question: "What was Doug's favorite TV show that Carrie hated?",
+                    options: ["Flashdance", "Star Trek", "Battlestar Galactica", "The A-Team"],
                     correct: 1
                 }
             ]
         },
         {
-            name: "DOUG'S ATHLETIC LIFE",
+            name: "SUPPORTING CHARACTERS",
             questions: [
                 {
-                    question: "What position did Doug play on his company softball team?",
-                    options: ["Pitcher", "First Base", "Catcher", "Third Base"],
-                    correct: 2
+                    question: "Who was Doug's best friend?",
+                    options: ["Deacon", "Spence", "Danny", "Richie"],
+                    correct: 0
                 },
                 {
-                    question: "What was the name of Doug's bowling team?",
-                    options: ["The Pinheads", "The Strike Force", "The Gutterballers", "The King Pins"],
+                    question: "What famous actor lived next door to Doug and Carrie?",
+                    options: ["Lou Ferrigno", "Adam Sandler", "Ray Romano", "Jerry Stiller"],
+                    correct: 0
+                },
+                {
+                    question: "What was Spence's occupation?",
+                    options: ["Subway token clerk", "Teacher", "Doctor", "Accountant"],
+                    correct: 0
+                },
+                {
+                    question: "What was Holly's main job throughout the series?",
+                    options: ["Dog walker", "Waitress", "Secretary", "Hairdresser"],
+                    correct: 0
+                },
+                {
+                    question: "What was Deacon's wife's name?",
+                    options: ["Kelly", "Kim", "Karen", "Katie"],
+                    correct: 0
+                },
+                {
+                    question: "What was Danny's previous job before IPS?",
+                    options: ["Firefighter", "Police officer", "Construction worker", "Mail carrier"],
+                    correct: 0
+                },
+                {
+                    question: "Where did Arthur originally live before moving in with Doug and Carrie?",
+                    options: ["Queens apartment", "Brooklyn house", "Manhattan condo", "Long Island home"],
+                    correct: 0
+                },
+                {
+                    question: "What was Carrie's occupation?",
+                    options: ["Legal secretary", "Real estate agent", "Bank teller", "Insurance agent"],
+                    correct: 0
+                },
+                {
+                    question: "What sport was Spence particularly bad at?",
+                    options: ["Bowling", "Basketball", "Baseball", "Football"],
                     correct: 1
                 },
                 {
-                    question: "What sport did Doug play that caused him to injure his knee?",
-                    options: ["Basketball", "Football", "Racquetball", "Softball"],
-                    correct: 2
-                },
-                {
-                    question: "What was Doug's nickname when he played high school football?",
-                    options: ["The Beast", "The Wall", "The Train", "The Tank"],
-                    correct: 2
-                },
-                {
-                    question: "How many times did Doug claim to have completed the New York City Marathon?",
-                    options: ["Once", "Twice", "Three times", "Never actually completed it"],
-                    correct: 3
-                },
-                {
-                    question: "What martial art did Doug briefly take up?",
-                    options: ["Karate", "Kung Fu", "Tai Chi", "Judo"],
+                    question: "What was the name of the bar where the gang usually hung out?",
+                    options: ["Cooper's", "Murphy's", "O'Malley's", "Patrick's"],
                     correct: 0
                 },
                 {
-                    question: "What was the name of the gym Doug joined but never went to?",
-                    options: ["Fitness Empire", "Downtown Fitness", "Power Gym", "Total Health"],
+                    question: "Who was Doug's supervisor at IPS?",
+                    options: ["O'Boyle", "Sullivan", "O'Brien", "Murphy"],
                     correct: 0
+                },
+                {
+                    question: "What was Ray Barone's connection to Doug?",
+                    options: ["Friend from Cooper's", "Delivery route customer", "High school friend", "Cousin"],
+                    correct: 1
+                },
+                {
+                    question: "Who lived in Doug and Carrie's basement temporarily?",
+                    options: ["Danny", "Spence", "Richie", "Deacon"],
+                    correct: 0
+                },
+                {
+                    question: "What was Holly's boyfriend's occupation?",
+                    options: ["Dog groomer", "Mechanic", "Teacher", "Bartender"],
+                    correct: 0
+                },
+                {
+                    question: "What was Arthur's typical outfit?",
+                    options: ["Suit and tie", "Sweater vest", "Track suit", "Hawaiian shirt"],
+                    correct: 2
                 }
             ]
         },
         {
-            name: "ARTHUR & SUPPORTING CHARACTERS",
+            name: "DOUG'S WORK LIFE",
             questions: [
                 {
-                    question: "What was Arthur's job before retirement?",
-                    options: ["Real estate agent", "Insurance salesman", "Restaurant owner", "Janitor"],
-                    correct: 0
-                },
-                {
-                    question: "What was the name of Spence's mother?",
-                    options: ["Veronica", "Victoria", "Valerie", "Virginia"],
-                    correct: 0
-                },
-                {
-                    question: "What medical condition did Holly's boyfriend have that prevented him from dancing?",
-                    options: ["Inner ear infection", "Vertigo", "Bad knee", "Flat feet"],
+                    question: "What company did Doug drive for?",
+                    options: ["UPS", "IPS", "FedEx", "DHL"],
                     correct: 1
                 },
                 {
-                    question: "What was the name of Deacon's first son?",
-                    options: ["Major", "Minor", "Junior", "Kirby"],
+                    question: "What was Doug's favorite lunch spot on his route?",
+                    options: ["Subway", "White Castle", "McDonald's", "Burger King"],
+                    correct: 1
+                },
+                {
+                    question: "What did Doug's work friends call him?",
+                    options: ["Moose", "Big Guy", "Heffernan", "Chief"],
                     correct: 2
                 },
                 {
-                    question: "What was the name of the retirement home where Arthur briefly lived?",
-                    options: ["Sunset Village", "Pine Valley", "Maple Gardens", "Springfield Manor"],
+                    question: "What happened when Doug tried to become a supervisor?",
+                    options: ["Failed the test", "Got nervous and quit", "Passed but declined", "Lost to another driver"],
                     correct: 0
                 },
                 {
-                    question: "What was Danny's occupation before becoming an IPS driver?",
-                    options: ["Firefighter", "Police officer", "Subway conductor", "Construction worker"],
+                    question: "What was Doug's typical uniform color?",
+                    options: ["Brown", "Blue", "Grey", "Green"],
+                    correct: 1
+                },
+                {
+                    question: "Which coworker constantly borrowed money from Doug?",
+                    options: ["Deacon", "Danny", "Richie", "Spence"],
+                    correct: 2
+                },
+                {
+                    question: "What did Doug often do in his truck between deliveries?",
+                    options: ["Nap", "Eat", "Read comics", "Listen to music"],
+                    correct: 1
+                },
+                {
+                    question: "What was Doug's usual delivery area?",
+                    options: ["Queens", "Brooklyn", "Manhattan", "Long Island"],
                     correct: 0
                 },
                 {
-                    question: "What was the name of Carrie's half-sister?",
-                    options: ["Sara", "Lisa", "Kelly", "Jenny"],
+                    question: "What vehicle did Doug drive before becoming a delivery driver?",
+                    options: ["Ice cream truck", "Taxi", "Pizza delivery car", "Moving van"],
+                    correct: 0
+                },
+                {
+                    question: "What was Doug's typical excuse for being late to work?",
+                    options: ["Traffic", "Train delays", "Overslept", "Car trouble"],
+                    correct: 2
+                }
+            ]
+        },
+        {
+            name: "MEMORABLE EPISODES & MOMENTS",
+            questions: [
+                {
+                    question: "What did Doug join to lose weight?",
+                    options: ["Weight Watchers", "Food Addicts", "Jenny Craig", "Gym membership"],
+                    correct: 1
+                },
+                {
+                    question: "What instrument did Arthur try to learn?",
+                    options: ["Piano", "Violin", "Drums", "Guitar"],
+                    correct: 0
+                },
+                {
+                    question: "What sport did Doug play in the company league?",
+                    options: ["Softball", "Basketball", "Bowling", "Football"],
+                    correct: 0
+                },
+                {
+                    question: "What was Doug's favorite holiday?",
+                    options: ["Christmas", "Thanksgiving", "Halloween", "Fourth of July"],
+                    correct: 1
+                },
+                {
+                    question: "What was the name of Doug and Carrie's dog?",
+                    options: ["Stanley", "Rocky", "Max", "Bailey"],
+                    correct: 0
+                },
+                {
+                    question: "What did Arthur sell door-to-door?",
+                    options: ["Vacuum cleaners", "Encyclopedia sets", "Kitchen knives", "Beauty products"],
+                    correct: 2
+                },
+                {
+                    question: "What did Doug name his basement apartment?",
+                    options: ["The Cave", "The Den", "The Fortress", "The Hideout"],
+                    correct: 0
+                },
+                {
+                    question: "What game show did Doug appear on?",
+                    options: ["Family Feud", "The Price is Right", "Wheel of Fortune", "Jeopardy"],
+                    correct: 1
+                },
+                {
+                    question: "What did Doug collect?",
+                    options: ["Baseball cards", "Comic books", "Hot Wheels", "Stamps"],
+                    correct: 1
+                },
+                {
+                    question: "What was Doug's favorite food at the Chinese restaurant?",
+                    options: ["Orange chicken", "Kung pao chicken", "Lo mein", "Egg rolls"],
+                    correct: 0
+                },
+                {
+                    question: "What activity did Doug and Carrie take classes in?",
+                    options: ["Dancing", "Cooking", "Swimming", "Tennis"],
+                    correct: 1
+                },
+                {
+                    question: "What was Arthur's biggest fear?",
+                    options: ["Heights", "Dogs", "Flying", "Water"],
+                    correct: 2
+                },
+                {
+                    question: "What was Doug's childhood nickname?",
+                    options: ["Dougie", "The Train", "Big D", "Heff"],
+                    correct: 0
+                },
+                {
+                    question: "What was Doug's favorite arcade game?",
+                    options: ["Pac-Man", "Street Fighter", "Frogger", "Space Invaders"],
+                    correct: 2
+                },
+                {
+                    question: "What was the name of the retirement home Arthur briefly stayed in?",
+                    options: ["Sunset Village", "Pine Valley", "Queens Manor", "Golden Years"],
                     correct: 0
                 }
             ]
@@ -470,11 +570,11 @@ function showResults() {
 
 // Get score level based on correct answers
 function getScoreLevel(score) {
-    if (score >= 25) return 'King/Queen of Queens Superfan';
-    if (score >= 20) return 'IPS Supervisor Level';
-    if (score >= 15) return 'Regular Customer';
-    if (score >= 10) return 'Occasional Viewer';
-    return 'Time to binge-watch the series!';
+    if (score >= 45) return 'King/Queen of Queens Expert';
+    if (score >= 35) return 'Super Fan';
+    if (score >= 25) return 'Devoted Viewer';
+    if (score >= 15) return 'Casual Fan';
+    return 'Time to start watching!';
 }
 
 // Restart the quiz
